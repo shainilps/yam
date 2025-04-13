@@ -1,0 +1,15 @@
+{
+  "dependency": {
+    "prodDependency": [],
+    "devDependency": ["@eslint/js", "eslint", "globals"]
+  },
+  "scripts": {
+    "pmSpecific": [],
+    "general": [],
+    "packageJson": {
+      "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
+      "lint:fix": "eslint . --ext .js,.ts,.jsx,.tsx --fix"
+    }
+  },
+  "configFiles": ["eslint.config.mjs"]
+}

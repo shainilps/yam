@@ -1,0 +1,15 @@
+{
+  "dependency": {
+    "prodDependency": [],
+    "devDependency": ["prettier"]
+  },
+  "scripts": {
+    "pmSpecific": [],
+    "general": [],
+    "packageJson": {
+      "format": "prettier . --write",
+      "format:check": "prettier . --check"
+    }
+  },
+  "configFiles": [".prettierrc.yaml", ".prettierignore"]
+}
