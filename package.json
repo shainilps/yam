@@ -1,6 +1,6 @@
 {
   "name": "@codeshaine/yam",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "type": "module",
   "description": "",
   "main": "dist/index.js",
