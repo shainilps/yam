@@ -1,24 +1,38 @@
 {
-  "name": "yam",
-  "version": "1.0.0",
+  "name": "@codeshaine/yam",
+  "version": "1.0.5",
   "type": "module",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "vitest --run",
-    "build": "tsc --watch",
+    "build": "tsc",
     "typecheck": "tsc --noEmit",
     "dev": "tsx src/index.ts",
     "lint": "eslint .",
     "format": "prettier . --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prepublishOnly": "npm run build"
   },
+  "files": [
+    "dist",
+    "templates"
+  ],
   "bin": {
     "yam": "dist/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "yam",
+    "cli",
+    "linter",
+    "formatter",
+    "command line"
+  ],
+  "author": "codeshaine",
+  "license": "MIT",
   "packageManager": "pnpm@10.2.0+sha512.0d27364e0139c6aadeed65ada153135e0ca96c8da42123bd50047f961339dc7a758fc2e944b428f52be570d1bd3372455c1c65fa2e7aa0bfbf931190f9552001",
   "devDependencies": {
     "@eslint/js": "^9.24.0",
@@ -36,11 +50,7 @@
   "dependencies": {
     "chalk": "^5.4.1",
     "commander": "^13.1.0",
-    "dist": "link:dist",
     "enquirer": "^2.4.1",
     "fs-extra": "^11.3.0"
-  },
-  "pnpm": {
-    "overrides": {}
   }
 }

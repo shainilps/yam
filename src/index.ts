@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Command } from 'commander';
 import { globalHandler, handleIndividualCommand } from './handler.js';
 import { fileURLToPath } from 'url';
@@ -35,7 +37,7 @@ program
       {
         type: 'multiselect',
         name: 'options',
-        message: 'Choose options (multiple choice):',
+        message: 'Choose options (press space for select):',
         choices: [
           {
             name: 'linter (eslint)',
