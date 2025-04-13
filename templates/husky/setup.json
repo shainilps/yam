@@ -1,0 +1,14 @@
+{
+  "dependency": {
+    "prodDependency": [],
+    "devDependency": ["husky"]
+  },
+  "scripts": {
+    "pmSpecific": ["husky init"],
+    "general": [
+      "mkdir -p .husky && echo 'npx lint-staged' > .husky/pre-commit && chmod +x .husky/pre-commit"
+    ],
+    "packageJson": {}
+  },
+  "configFiles": []
+}

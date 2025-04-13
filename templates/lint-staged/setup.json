@@ -1,0 +1,11 @@
+{
+  "dependency": {
+    "prodDependency": [],
+    "devDependency": ["lint-staged"]
+  },
+  "scripts": {
+    "pmSpecific": [],
+    "general": []
+  },
+  "configFiles": [".lintstagedrc.yaml"]
+}

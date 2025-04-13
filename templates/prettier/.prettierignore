@@ -7,4 +7,4 @@ package-lock.json
 pnpm-lock.yaml
 .gitignore
 README.md
-.husky
+package.json

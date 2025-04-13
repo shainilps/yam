@@ -1,0 +1,14 @@
+{
+  "dependency": {
+    "prodDependency": "",
+    "devDependency": ["vitest"]
+  },
+  "scripts": {
+    "pmSpecific": [],
+    "general": [],
+    "packageJson": {
+      "test": "vitest --run"
+    }
+  },
+  "configFiles": []
+}

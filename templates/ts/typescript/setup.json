@@ -1,0 +1,17 @@
+{
+  "dependency": {
+    "prodDependency": "",
+    "devDependency": ["typescript", "ts-node", "@types/node"]
+  },
+  "scripts": {
+    "pmSpecific": [],
+    "general": [],
+    "packageJson": {
+      "build": "tsc .",
+      "start": "node dist/index.ts",
+      "typecheck": "tsc --noEmit",
+      "dev": "ts-node src/index.ts"
+    }
+  },
+  "configFiles": ["tsconfig.json"]
+}

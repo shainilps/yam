@@ -1,0 +1,13 @@
+{
+  "dependency": {
+    "prodDependency": [],
+    "devDependency": []
+  },
+  "scripts": {
+    "pmSpecific": [],
+    "general": [],
+    "packageJson": {}
+  },
+
+  "configFiles": [".github/workflows/ci.yaml"]
+}

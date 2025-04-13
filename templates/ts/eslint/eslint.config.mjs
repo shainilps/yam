@@ -6,13 +6,10 @@ import tseslint from 'typescript-eslint';
 export default tseslint.config(
   eslint.configs.recommended,
   tseslint.configs.recommended,
-
   {
-    ignores: ['dist', 'jest.config.cjs', 'templates'],
+    ignores: ['dist', 'jest.config.cjs'], //files that you want to ignore
   },
   {
-    rules: {
-      '@typescript-eslint/no-explicit-any': 'off', // Allow the use of 'any'
-    },
+    rules: {}, //other rules
   }
 );
