@@ -94,7 +94,7 @@ export async function handleIndividualCommand(
       await setUpHuskyAndLintStaged(cwd, templateDir, packageManager);
       break;
 
-    case 'github-workflows':
+    case 'workflows':
       await setUpGitHubWorkflows(cwd, templateDir, packageManager);
       break;
 
