@@ -14,9 +14,6 @@ importers:
       commander:
         specifier: ^13.1.0
         version: 13.1.0
-      dist:
-        specifier: link:dist
-        version: link:dist
       enquirer:
         specifier: ^2.4.1
         version: 2.4.1

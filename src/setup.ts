@@ -122,7 +122,7 @@ export async function setUpGitHubWorkflows(
 
 export async function initializeGit(cwd: string, templateDir: string) {
   logInfo('Initializing git repo');
-  const source = path.join(templateDir, 'git', '.gitignore');
+  const source = path.join(templateDir, 'git-repo', 'gitignore');
   const dest = path.join(cwd, '.gitignore');
   await initliazeGit(source, dest);
   logSuccess('Git repo set up successfully');
