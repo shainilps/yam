@@ -1,6 +1,6 @@
 {
   "name": "@codeshaine/yam",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "description": "",
   "main": "dist/index.js",
@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit",
     "dev": "tsx src/index.ts",
     "lint": "eslint .",
+    "format:check": "prettier . --check",
     "format": "prettier . --write",
     "prepare": "husky",
     "prepublishOnly": "npm run build"
