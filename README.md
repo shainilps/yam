@@ -15,8 +15,8 @@ npm install -D @codeshaine/yam
 
 ## Commands
 ```bash
-yam init
-yam setup <components> --option value
+yam init #interactive mode(recommended)
+yam setup <components> --option value #manual mode
 ```
 **Options**:
 - `-t , --typescript` : Enable TS (`y`/`n`, default: `y`)
